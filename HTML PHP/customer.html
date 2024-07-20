@@ -1,0 +1,194 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Page</title>
+  <link rel="stylesheet" href="stylesdash.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>rabbit<sup>TM</sup>
+      </h1>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h2>Fill in your details</h2>
+      <form action="purchase-process.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"><br><br>
+        
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="country">Country</label>
+        <input type="country" id="country" name="country" required><br><br>
+        <label for="product">Choose Product:</label>
+        <select id="product" name="product" required>
+          <option value="rabbit r1(6th gen)">rabbit r1(6th gen)</option>
+          <option value="rabbit r1(7th gen)">rabbit r1(7th gen)</option>
+          <option value="rabbit r1(8th gen)">rabbit r1(8th gen)</option>
+        </select><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required min="1" value="1"><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Purchase Page. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Purchase Page</h1>
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <h2>Fill in your details</h2>
+      <form action="process_purchase.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="contact_info">Contact Info:</label>
+        <input type="text" id="contact_info" name="contact_info" required><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+        
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br><br>
+        
+        <label for="postal_code">Postal Code:</label>
+        <input type="text" id="postal_code" name="postal_code" required><br><br>
+        
+        <label for="product_id">Product ID:</label>
+        <input type="number" id="product_id" name="product_id" required><br><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required min="1" value="1"><br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Purchase Page. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="stylesdash.css">
+</head>
+<body>
+<header>
+    <div class="container">
+      <img src="/WEBTECH-RDBMS/rabbit-idle.gif" class="gif">
+      <img src="/WEBTECH-RDBMS/rabbit-idle.gif" class="gif2">
+      <h1>rabbit<sup>TM</sup> </h1>
+    </div>
+    <br>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Customer Details:</h1>
+        <h2>Enter Your Details</h2><br>
+        <form action="customer.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="contact_info">Contact Info:</label>
+            <input type="text" id="contact_info" name="contact_info" required><br><br>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required><br><br>
+
+            <label for="postal_code">Postal Code:</label>
+            <input type="text" id="postal_code" name="postal_code" required><br><br>
+            
+            <label for="product_id">Choose Product:</label>
+            <select id="product_id" name="product_id" required>
+              <option value="1">rabbit r1(6th gen)</option>
+              <option value="4">rabbit r1(7th gen)</option>
+              <option value="8">rabbit r1(8th gen)</option>
+            </select><br><br>
+        
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required min="1" value="1"><br><br>
+
+            <input type="submit" value="Submit" class="logging">
+        </form>
+    </div>
+</main>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Customer Details. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

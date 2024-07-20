@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(22, 33, 40);
+}
+
+.login-container {
+  color:aliceblue;
+  display:block;
+  background-image:linear-gradient(to bottom right,rgb(0, 97, 176),rgba(1, 181, 181, 0.817));
+  padding: 25px;
+  padding-left: 40px;
+  width:30%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+
+.input-group {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.input-group label {
+  display:block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff4000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.SignUp a{
+  color:aliceblue;
+  font-size: 15px;
+
+}
+.SignUp a:hover{
+  color:#ff4000;
+  font-size: 15px;
+
+}
+
+.error-message {
+  color: rgb(255, 255, 0);
+  font-size: 14px;
+  margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="stylesheet1.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>SignUp</h2>
+    <form id="login-form" method="post" action="signup.php" onsubmit="return validateForm()">
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+      <div class="input-group">
+        <label for="email">Email-Id:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Signup</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+    <br>
+    <div class="SignUp">
+      <a href="LOGIN_PAGE.html">Log In</a>
+    </div>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rabbit Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Rabbit Tech</h1>
+      <p>Your Technology Partner</p>
+    </div>
+  </header>
+  
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="container">
+      <section id="home">
+        <h2>Welcome to Rabbit Tech</h2>
+        <p>We are a leading technology company providing innovative solutions to businesses worldwide.</p>
+        
+        <?php 
+
+            // Start the session to access user information
+            session_start(); 
+            // Check if the user is logged in
+            if (isset($_SESSION['user_id'])) {
+            echo "<p>Welcome back, " . $_SESSION['username'] . "!</p>";
+            }
+        ?>
+      </section>
+      
+      <section id="services">
+        <!-- Your services section content here -->
+      </section>
+      
+      <section id="about">
+        <!-- Your about section content here -->
+      </section>
+      
+      <section id="contact">
+        <!-- Your contact section content here -->
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Rabbit Tech. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
